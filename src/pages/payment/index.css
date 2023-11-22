@@ -1,0 +1,286 @@
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 0px;
+}
+
+.part2 {
+    margin-top: 7em;
+}
+
+.dados {
+    margin-top: 3em;
+}
+
+.input1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.ipt {
+    display: flex;
+    flex-direction: column;
+}
+
+.dados input {
+    width: 19em;
+}
+
+.input1 :nth-child(1) {
+    margin-right: 1em;
+}
+
+input {
+    width: 20em;
+
+}
+
+h4 {
+    padding: 10px;
+}
+
+.plan-obs {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+    >span {
+        margin: 0px 45px 0px 10px;
+        color: rgb(74, 8, 159);
+        font-weight: 600;
+    }
+
+}
+
+h6 {
+    color: #0368FF;
+    margin-top: .2em;
+}
+
+.plan-select {
+    border: inset .1px black;
+    width: 32.5em;
+
+    .ipt1>input {
+        width: 2.5em !important;
+    }
+
+}
+
+.period {
+    padding: 25px 0px;
+    background-color: red;
+    color: white;
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+#fin1 {
+    border: none;
+    border-radius: 10px;
+    background-color: #4E55FF;
+    width: 18.5em;
+    padding: .5em 0em;
+
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+
+    margin-top: 40px;
+}
+
+.groupBut {
+    margin-top: 40px;
+}
+
+.box-card,
+.box-pix,
+.box-bolet {
+    display: none;
+
+    .ipt {
+        margin-right: 4em;
+        padding: 10px 0px;
+    }
+}
+
+.box-card input {
+    width: 18em;
+}
+
+button:hover {
+    background-color: rgb(60, 110, 180) !important;
+
+}
+
+#show,
+#show1 {
+    font-size: 15px;
+    padding: 5px 30px;
+
+    border: solid .1px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+#show1 {
+    margin: 0px 2.4em;
+}
+
+#show2 {
+    padding: 1px 30px;
+
+    border: solid .1px;
+    border-radius: 10px;
+
+    background-color: white;
+}
+
+#carM,
+#carD,
+#carC {
+    width: 11em;
+    margin-right: -.5em;
+
+}
+
+label {
+    padding: 4px 0px;
+}
+
+#bandeira {
+    text-align: center;
+    font-weight: 500;
+}
+
+/*PARTE PIX */
+.pix1 {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 125px 0px 0px;
+}
+
+.box-pix textarea {
+    border: none;
+    width: 42em;
+    height: 7em;
+
+
+}
+
+textarea:active {
+    border: none;
+
+}
+
+.qr-text {
+
+    padding: 20px 0px;
+
+    >button {
+        border: 0px;
+        border-radius: 20px;
+        background-color: #2bc63a;
+        color: white;
+        font-weight: 500;
+        padding: .7em 6em;
+        margin-bottom: 1em;
+    }
+
+    >h5 {
+        color: red;
+        font-size: 19px;
+    }
+
+
+    >span {
+
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+.parcel {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    width: 92%;
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+    .input1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input1 :nth-child(1) {
+        margin: 0px;
+    }
+
+    .ipt {
+        margin: 0px 0px !important;
+    }
+
+    select {
+        width: 70%;
+        align-self: center;
+    }
+
+        /*CARD PLANO */     
+    .container, .plan-obs {
+        display: flex;
+        flex-direction: column;
+        padding: 3em 0px;
+        text-align: center;
+
+        >span {
+            margin: 0px;
+        }
+    }
+
+    .plan-obs {
+        padding: 1em;
+    }
+
+    .plan-select {
+        width: 24em;
+        margin-left: 1em;
+
+        font-size: 15px !important;
+
+
+    }
+
+
+
+    .pix1 {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    textarea {
+        width: 22em !important;
+    }
+
+    #show {
+        margin: 35px 0px;
+    }
+
+}

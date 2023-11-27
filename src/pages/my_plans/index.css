@@ -1,6 +1,6 @@
-body{
+.containerMy{
   color: white;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 .titles-plans{
   margin: 5px 0px;
@@ -9,11 +9,12 @@ body{
   text-decoration: none;
   text-align: justify;
 } 
-h1 {
+.my {
   font-size: 64px;
 }
-h4{
-  margin-top: 35px;
+#my{
+  margin: 105px 20px 00px 0px;
+  font-size: 32px;
   color: rgb(214, 19, 19);
 }
 .logo-plans{
@@ -40,6 +41,20 @@ transition: .2s;
 background-color: red;
 color: white;
 } 
+.row {
+  --bs-gutter-x: -0rem;
+  margin-left: 1em;
+}
+
+.h-100 {
+  border: 1px black solid;
+  width: 97%;
+
+> img {
+  height: 25em;
+}
+}
+
 
 .cancel {
   background-color: red;

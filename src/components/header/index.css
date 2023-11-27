@@ -1,10 +1,14 @@
 .bg-body-tertiary {
     padding: 0px !important;
-    background-color: black;
+    background-color: rgb(3, 1, 1);
 
 }
 .container-fluid {
-    background-color: black;
+    background-color: rgb(25, 23, 23);
+}
+
+.nav-item {
+    padding: 0px 15px;
 }
 a {
     color: white !important;

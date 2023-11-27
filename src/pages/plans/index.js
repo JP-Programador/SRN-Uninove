@@ -1,4 +1,8 @@
 import './index.css'
+import { Link } from "react-router-dom"
+
+import Footer from "../../components/footer";
+import Header from "../../components/header";
 
 import Bron from '../../assets/bronze.svg'
 import Our from '../../assets/ouro.svg'
@@ -8,7 +12,8 @@ import Cor from '../../assets/correto.png'
 
 export default function Plans () {
     return (
-        <div className="container">
+        <div className="containerplans1">
+            <Header />
          <div class="container-plans">
         <div class="boxs-plans">
             <img src={Bron}/>
@@ -20,7 +25,7 @@ export default function Plans () {
                     <div class="minis-box"><img src={Cor} alt="Simbolo de correto" /> <span> Desastres Naturais</span></div>
                     <div class="minis-box"><img src={Cor} alt="Simbolo de correto" /><span> Furto, extorsão e roubo de bens </span></div>
                     <div class="minis-box"><img src={Cor} alt="Simbolo de correto" /><span> Monitoramento 24Hrs</span></div>
-                    <button> <a href="../Base_Client/"> COTAR AGORA</a></button>
+                    <button className='cot'> <Link to="/Cadastro"> COTAR AGORA</Link></button>
                 </div>
             </div>
         </div>
@@ -36,7 +41,7 @@ export default function Plans () {
                     <div class="minis-box"><img src={Cor} alt="Simbolo de correto" /> <span> reparos domésticos</span></div>
                     <div class="minis-box"><img src={Cor} alt="Simbolo de correto" /> <span> Serviços para computadores</span></div>
                     <div class="minis-box"><img src={Cor} alt="Simbolo de correto" /> <span> Tumulto, greve e lock-out</span></div>
-                    <button> <a href="../Base_Client/"> COTAR AGORA</a></button>
+                    <button className='cot'> <Link to="/Cadastro"> COTAR AGORA</Link></button>
                 </div>
             </div>
         </div>
@@ -51,11 +56,12 @@ export default function Plans () {
                     <div class="minis-box"><img src={Cor} alt="Simbolo de correto" /> <span> Danos Elétricos</span></div>
                     <div class="minis-box"><img src={Cor} alt="Simbolo de correto" /> <span> Fechaduras Eletrônicas </span></div>
                     <div class="minis-box"><img src={Cor} alt="Simbolo de correto" /> <span> Vendaval, furacão, ciclone, tornado e granizo </span></div>                   
-                    <button> <a href="../Base_Client/"> COTAR AGORA</a></button>
+                    <button className='cot'> <Link to="/Cadastro"> COTAR AGORA</Link></button>
                 </div>
             </div>
         </div>
     </div>
+    <Footer />
         </div>
     )
 }   

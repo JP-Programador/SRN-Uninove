@@ -1,11 +1,16 @@
+import Footer from "../../components/footer";
+import Header from "../../components/header";
+
 import './index.css'
 
 
 
 export default function Contact () {
     return (
-        <div className="container">
-            <div class="container-contact">
+        <div className="containerCt">
+            <Header />
+        
+        <div class="container-contact">
         <img src="https://redfit.com.br/assets/img/contato-page.png?1" alt="placa fale conosco" />
         <form>
                 <h3>Preencha o formulário</h3>
@@ -22,10 +27,11 @@ export default function Contact () {
                 <label>Email:</label>
                 <input type="email" name="email" id="" placeholder="Digite seu email" required />
                 <label>Mensagem:</label>
-                <textarea placeholder="Digite sua mensagem" required></textarea>
+                <textarea id="en" placeholder="Digite sua mensagem" required></textarea>
                 <input type="submit" id="enviar" onclick="Ir()" />
         </form>
              </div>    
+             <Footer />
         </div>
     )
 }

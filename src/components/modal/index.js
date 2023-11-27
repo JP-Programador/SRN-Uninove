@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+
 import "./index.css";
+import { Link } from "react-router-dom";
 
 function Modalss() {
   const [show, setShow] = useState(false);
@@ -9,9 +11,10 @@ function Modalss() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+
   return (
     <div className="Container">
-      <Button id="fin1" variant="primary" onClick={handleShow}>
+     <Button id="fin1" variant="primary" onClick={handleShow}>
         FINALIZAR PEDIDO
       </Button>
 
@@ -27,22 +30,21 @@ function Modalss() {
           <div id="a1">
             {" "}
             Caso queira olhar a tela do seu pedido com os benefícios, só cliclar
-            no botão abaixo.
+            em acessar meus pedidos.
           </div>{" "}
         </Modal.Body>
         <Modal.Footer>
-          <a href="../../pages/home">
             {" "}
-            <Button variant="secondary" onClick={handleClose}>
+            <Link to="/">
+            <Button class="mod" variant="secondary" onClick={handleClose}>
               FECHAR
-            </Button>{" "}
-          </a>
-          <a href="../../pages/my_plans">
-            {" "}
-            <Button variant="primary" onClick={handleClose}>
+            </Button>{" "}</Link>
+          
+
+            <Link to="/Login">   <Button class="mod" variant="primary" onClick={handleClose}>
               ACESSAR MEU PEDIDO{" "}
-            </Button>{" "}
-          </a>
+            </Button>   </Link>
+          
         </Modal.Footer>
       </Modal>
     </div>

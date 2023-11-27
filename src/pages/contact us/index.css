@@ -76,9 +76,11 @@ label {
     margin-bottom: 5px;
 }
 
-textarea {
+#en {
     height: 15em;
     padding-left: 1em;
+    margin: 0px;
+    width: 100%;
 }
 
 h5 {

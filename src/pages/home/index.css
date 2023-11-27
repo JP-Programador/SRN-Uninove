@@ -1,46 +1,5 @@
-* {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.container {
-    margin: 0px;
-}
 
-a {
-    text-decoration: none;
-    color: white;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-    
-}
 
-.logo img {
-   padding: 10px 0px 10px 48px;
-    width: 150px;
-}
-
-.xx {
-display: flex;
-justify-content: center;
-padding-right: 12%;
-}
-
-.tex1 {
-    color: rgb(255, 255, 255);
-    margin-right: 170px;
-    cursor: pointer;
-
-}
-
-a:hover {
-    color: red;
-    font-size: 18px;
-}
 
 
 
@@ -68,21 +27,24 @@ a:hover{
     color: white;
 }
 
-h1 {
-    color: #ffffff; 
+#cli1 {
+    color: #ff0000;
+    font-size: 88px;
+    margin: 0px;
+
+}
+#cli2 {
+    color: #ffffff;
+    font-weight: 700;
     font-family: "monumentextended-regular.otf";
     font-size: 68px;
     margin: 0px;
-
-}
-h2 {
-    color: #ff0000;  
-    font-size: 88px;
-    margin: 0px;
 }
 
-h3 {
-    font-size: 26px;
+.hh3 {
+    font-size: 24px;
+    text-align: justify;
+    color: black;
 }
 
 h4 {
@@ -92,10 +54,11 @@ h4 {
     padding: 0px;
 }
 
-span {
+.srb {
     color: #e6e4e4; 
     font-family: "monumentextended-regular.otf";
-    font-size: 18px;
+    font-size: 22px;
+    text-align: center;
 }
 
 .container-home button {
@@ -180,7 +143,7 @@ button:hover {
 .secund-header {
     display: flex;
     flex-direction: row;
-
+    align-items: center;
 }
 
 .secund-header img {

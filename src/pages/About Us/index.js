@@ -1,13 +1,15 @@
 import React from "react";
 import "./index.css";
-
+import Footer from "../../components/footer";
+import Header from "../../components/header";
 import Fundo from "../../assets/fundo1.png";
 import Mis from "../../assets/img3 1 (1).png";
 import Vis from "../../assets/cam.png";
 import val from "../../assets/img12 1.png";
 export default function About() {
   return (
-    <div className="container">
+    <div className="containerAb">
+      <Header />
       <div class="container-about">
         <div class="box-about">
           <div class="text-box">
@@ -29,28 +31,30 @@ export default function About() {
           </div>
           <img src={Fundo} />
         </div>
-        <div id="slider">
-          <div class="selected">
-            <h2>Missão</h2>
-            <span>
-              Nossa missão é prestar com qualidade as melhores soluções em
-              segurança, por meio de rapidez, tecnologia e ética profissional,
-              proporcionando o bem-estar de nossos clientes. Garantindo cada vez
-              mais credibilidade, solidez e excelência no mercado.
-            </span>
-            <img src={Mis} />
-          </div>
-          <div>
-            <h2>Visão</h2>
-            <span>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="600">
+              <h2 className="h2l">Missão</h2>
+              <span className="spans">
+                Nossa missão é prestar com qualidade as melhores soluções em
+                segurança, por meio de rapidez, tecnologia e ética profissional,
+                proporcionando o bem-estar de nossos clientes. Garantindo cada vez
+                mais credibilidade, solidez e excelência no mercado.
+              </span>
+                <img src={Mis} class="d-block w-100" alt="..."/>
+              </div>
+              <div class="carousel-item" data-bs-interval="800">
+              <h2 className="h2l">Visão</h2>
+            <span className="spans">
               Nossa visão é estar entre as maiores seguradoras residenciais do
               país, sendo exemplo de segurança e confiabilidade.
             </span>
-            <img src={Vis} />
-          </div>
-          <div>
-            <h2>Valores</h2>
-            <span>
+                <img src={Vis} class="d-block w-100" alt="..." width={'100px'}/>
+                
+              </div>
+              <div class="carousel-item"data-bs-interval="800">
+              <h2 className="h2l">Valores</h2>
+            <span className="spans">
               {" "}
               Nosso valor em primeiro lugar é focar, perceber e decidir o que é
               relevante, planejando o tempo para execução do trabalho de forma
@@ -58,12 +62,14 @@ export default function About() {
               processos. Tendo a capacidade de alcançar e superar metas
               estabelecidas, garantindo a qualidade no que é feito.
             </span>
-            <img src={val} />
-          </div>
+                <img src={val} class="d-block w-100" alt="..."/>
+                
+              </div>
+            </div>
+      
         </div>
-      </div>
-
-      <script src="./script.js"></script>
+        </div>
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import './index.css'
+import './fot.css'
 
 
 import Logo from '../../assets/logo.png'
@@ -11,8 +11,8 @@ export default function Footer() {
         <div className="contaierFooter">
              <div class="log-footer"><img src={Logo} alt="logo da empresa" /></div>
         <div class="box-footer">
-            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511999898999"> <button> Entre em Contato  </button></a>
-            <h6>Email: <br/> srnsegurancaresidencial@gmail.com</h6>
+            <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511999898999"> <button id='foter'> Entre em Contato  </button></a>
+            <h6 id='fo'>Email: <br/> srnsegurancaresidencial@gmail.com</h6>
             <div class="end">Endereço:</div>
             <span id="footer">Avenida Carlos Klein, Nº 2340 - Socorro, São Paulo - SP            </span>
         </div>

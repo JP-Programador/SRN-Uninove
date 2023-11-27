@@ -1,30 +1,46 @@
 import './index.css'
 import logo from '../../assets/logo.png'
+import { useState } from "react"
+
+import Footer from "../../components/footer";
+import Header from "../../components/header";
+import { Link } from 'react-router-dom';
 export default function Login () {
+    const[ email, setEmail] = useState ('');
+    const[ senha, setSenha] = useState ('');
+
+    const logar = async () => {
+        let r = email;
+      if(r === "joaopedrosilvadossantos2003@gmail.com") {
+        return alert("sss");
+    } 
+
+    }
 
     return (
-        <div className="container">
-            <div class="container">
+        <div className="containerlog">
+        <Header />
+        <div className="container1">
+
         <div class="box1">
             <div class="box-form">
-                <h1>PORTAL DO CLIENTE</h1>
-                <form name="form" method="post">
+                <h1 id='cli'>PORTAL DO CLIENTE</h1>
+                <form name="form" method='post' >
                     <label for="email">Email:</label><br></br>
-                    <input type="email" name="email" id="email" placeholder="Digite seu email"  required /> <br></br><br></br>
+                    <input type="email" name="email" value={email}  id="email" placeholder="Digite seu email" onChange = {e => setEmail(e.target.value)} required /> <br></br><br></br>
                     <label for="senha">Senha:</label><br></br>
-                    <input type="password" name="senha" id="senha" placeholder="Digite sua Senha" required/> <br></br><br></br>
-                    <input type="submit" name="acessar" id="acessar" value="acessar" onclick="Acessar(senha.value, email.value)"/>
+                    <input type="password" name="senha" id="senha" value = {senha} placeholder="Digite sua Senha" onChange = {e => setSenha(e.target.value)} required/> <br></br><br></br>
+                 <Link to={"/Meu Plano"}>  <input type='button' name="acessar" id="acessar" value={"Entrar"}/></Link>
                 </form>
                 <div id="slider">
                     <div class="selected">Prevenção é a primeira linha de defesa!</div>
-                    <div>Você confia na segurança da sua casa?</div>
-                    <div>Investir em segurança é ter qualidade de vida!</div>
-                    <div>Antes prevenção que prejuizo!</div>
                 </div>
             </div>
         </div>
         <div class="box2"> <img src={logo} alt="logo da empresa" /></div>
         </div>
+
+        <Footer />
         </div>
     )
 }

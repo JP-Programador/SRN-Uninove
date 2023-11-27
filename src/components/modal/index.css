@@ -5,7 +5,7 @@
     width: 18.5em;
     padding: .5em 0em;
 
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 28px;
     font-weight: bold;
 
@@ -19,10 +19,15 @@
 
 .modal-body  {
     font-weight: 700;
+    color: rgb(0, 0, 0);
+
 }
 
-.a1 {
+#a1 {
     color: red;
+}
+.mod {
+    width: 100% !important;
 }
 
 .modal-header .btn-close {

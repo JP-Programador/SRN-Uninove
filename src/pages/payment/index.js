@@ -1,5 +1,6 @@
 import "./index.css";
 
+import Footer from "../../components/footer";
 import Header from "../../components/header";
 import Pix from "../../assets/Logo—pix.png";
 import Cart from "../../assets/Group 2.png";
@@ -55,59 +56,64 @@ async function MostrarPix() {
       document.execCommand('copy');
       alert('Código Pix copiado, com sucesso  !');
     });
-  }
 
+  }
+  var meses = ["janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "NOVEMBRO", "Dezembro"];
+  let d = new Date();
+  let dia = d.getDate();
+  let x = d.getMonth();
+  let mes = meses[x];
   return (
-      <div className="container1">
+      <div className="container11">
             <Header />
 
-      <div className="container">
+      <div className="container21">
       <div className="part1">
-      <h1>CONFIRMAÇÃO DO PEDIDO:</h1>
+      <h1 className="tip">CONFIRMAÇÃO DO PEDIDO:</h1>
         <div class="dados">
           <div class="input1">
             <div class="ipt">
-              <label>Nome Completo:</label> <input type="text" />
+              <label>Nome Completo:</label> <input type="text" value={"Nome Teste"} />
             </div>
             <div class="ipt">
-              <label>CPF:</label> <input type="" />
-            </div>
-          </div>
-
-          <div class="input1">
-            <div class="ipt">
-              <label>Telefone:</label> <input type="text" />
-            </div>
-            <div class="ipt">
-              <label>Endereço de Email:</label> <input type="" />
+              <label>CPF:</label> <input type=""value={"999.999.999-99"}/>
             </div>
           </div>
 
           <div class="input1">
             <div class="ipt">
-              <label>Endereço da Propriedade:</label> <input type="text" />
+              <label>Telefone:</label> <input type="text" value={"11 99999-9999"} />
             </div>
             <div class="ipt">
-              <label>CPF:</label> <input type="" />
+              <label>Endereço de Email:</label> <input type="" value={"emailteste@gmail.com"}/>
+            </div>
+          </div>
+
+          <div class="input1">
+            <div class="ipt">
+              <label>Endereço da Propriedade:</label> <input type="text" value={"Avenida Carlos Klein, Nº 2340 - Socorro, São Paulo - SP"}/>
+            </div>
+            <div class="ipt">
+              <label>Nº:</label> <input type="" value={"99"}  />
             </div>
           </div>
 
           <div class="base-4">
-            <h5 style={{marginTop: '20PX'}}>Preferências de Instalação</h5>
+            <h5 className="tip" style={{margin: '20px 0px 10px 90px'}}>Preferências de Instalação:</h5>
 
             <div class="input1">
               <div class="ipt">
-                <label>Data:</label> <input type="text" />
+                <label>Data:</label> <input type="text" value={"00/00/0000"} />
               </div>
               <div class="ipt">
-                <label>Horário:</label> <input type="" />
+                <label>Horário:</label> <input type="" value={"00:00"} />
               </div>
             </div>
           </div>
         </div>
         <div className="payment" id="myGroup">
           <div className="groupBut">
-            <h5>SELECIONA MÉTODO DE PAGAMENTO:</h5>
+            <h5 className="tip">SELECIONA MÉTODO DE PAGAMENTO:</h5>
             <button id="show" onClick={MostrarCard}>
               <img src={Cart} alt="" width={"150px"} />
             </button>
@@ -122,7 +128,14 @@ async function MostrarPix() {
               </div>
               <div class="ipt">
                 <label>Bandeira:</label>{" "}
-                <input type="text" value="Visa" id="bandeira" />
+                <select name="cars" id="cart" form="carform">
+                <option value="volvo">Escolher Bandeira</option>
+                  <option value="volvo">MasterCard</option>
+                  <option value="saab">Visa</option>
+                  <option value="opel">American Express</option>
+                  <option value="audi">Cielo</option>
+                </select>
+
               </div>
             </div>
 
@@ -136,7 +149,7 @@ async function MostrarPix() {
               </div>
             </div>
 
-            <h6>Vencimento:</h6>
+            <h6 className="venb">Vencimento:</h6>
             <div class="input1">
               <div class="ipt">
                 <label>Mês:</label> <input type="text" id="carM" />
@@ -152,12 +165,12 @@ async function MostrarPix() {
               <label>Parcelado em:</label>
               <select name="cars" id="cars">
                   <option value="1x">Quantidade de Parcelas</option>
-                  <option value="2x">1 x R$ 999,00</option>
-                  <option value="3x">2 x R$ 999,00</option>
-                  <option value="5x">3 x R$ 999,00</option>
-                  <option value="6x">4 x R$ 999,00</option>
-                  <option value="6x">5 x R$ 999,00</option>
-                  <option value="6x">6 x R$ 999,00</option>
+                  <option value="2x">1 x R$ 800,00</option>
+                  <option value="3x">2 x R$ 400,00</option>
+                  <option value="3x">3 x R$ 266,66</option>
+                  <option value="6x">4 x R$ 200,00</option>
+                  <option value="6x">5 x R$ 160,00</option>
+                  <option value="6x">6 x R$ 133,33</option>
               </select>
             </div>
           </div>
@@ -170,12 +183,12 @@ async function MostrarPix() {
                 <button id="copiar" onClick={Copiar}>
                   Copiar código PIX
                 </button>
-                <h5>PAGAR COM O PIX É FÁCIL E RÁPIDO</h5>
+                <h5 className="h5pix">PAGAR COM O PIX É FÁCIL E RÁPIDO</h5>
                 <span>
                   Abra seu aplicativo bancário e escaneie o QRCode, para
-                  prosseguir com o pagamento ou copie o código Pix atráves do
+                  prosseguir com o pagamento ou copie <br></br> o código Pix atráves do
                   botão acima, abra seu aplicativo bancário na opção PIX copia e
-                  cola, cole-o e prossiga com o pagamento.
+                  cola, <br></br> cole-o e prossiga com o pagamento.
                 </span>
               </div>
             </div>
@@ -190,24 +203,25 @@ async function MostrarPix() {
       </div>
       <div className="part2">
         <div className="plan-select">
-          <h4>PLANO SELECIONADO:</h4>
+          <h4 className="h4p">PLANO SELECIONADO:</h4>
           <div className="plan-obs">
-            <h5>Plano Bronze</h5>
+            <h5>Plano Ouro</h5>
             <span>(Comtempla 12 beneficios)</span>
-            <h6>R$ 999,00 (Anual)</h6>
+            <h6>R$ 800,00 (Anual)</h6>
           </div>
           <div class="ipt1">
-            <input type="checkbox" />
+            <input type="checkbox" id="check" />
             <span>Habilitar renovação automaticamente.</span>
           </div>
           <div className="period">
-            PERÍODO VIGENTE: 09 DE SETEMBRO 2023 ATÈ 09 DE SETEMBRO 2024
+            PERÍODO VIGENTE: {dia} DE {mes} 2023 ATÈ {dia} DE {mes} 2024
           </div>
         </div>
 
         <Modalss id="fin1"/>
       </div>
     </div>
+    <Footer />
     </div>
   );
 }

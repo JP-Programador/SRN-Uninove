@@ -1,10 +1,25 @@
 import "./index.css";
+import Footer from "../../components/footer";
+import Header from "../../components/header";
+import Ouro from "../../assets/ouro.svg"
+import Ver from "../../assets/verificado.png"
 
+import { Link } from "react-router-dom"
+import Button from "react-bootstrap/Button";
+import { useState, version } from "react";
+
+import Modal from "react-bootstrap/Modal";
 export default function Client() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <div className="container">
+    <div className="containerBA">
+      <Header />
       <main>
-        <h1> Cadastrar-se</h1>
+        <h1 id="ba"> Cadastrar-se</h1>
         <div class="base-plan">
           <div
             class="offcanvas offcanvas-end"
@@ -26,131 +41,143 @@ export default function Client() {
             <div class="offcanvas-body">
               <div class="select-plan">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Ouro.svg"
-                  height="150"
+                  src={Ouro}
+                  height="170"
                   alt=""
                 />
                 <h4>Plano Prata</h4>
               </div>
               <div class="box-benefits">
-                <h5>Nossos Serviços:</h5>
+                <h5 style={{color:'red'}}>Nossos Serviços:</h5>
                 <div class="benefits">
                   {" "}
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Ouro.svg"
+                    src={Ver}
+                    height="20"
+                    
+                    alt=""
+                  />{" "}
+                  <span>Monitoramento 24Hrs</span>{" "}
+                </div>
+                <div class="benefits">
+                  {" "}
+                  <img
+                    src={Ver}
+                    height="20"
+                    
+                    alt=""
+                  />{" "}
+                  <span>Fechaduras Eletrônicas</span>{" "}
+                </div>
+                <div class="benefits">
+                  {" "}
+                  <img
+                    src={Ver}
+                    height="20"
+                    alt=""
+                  />{" "}
+                  <span>Apólice de riscos nomeados</span>{" "}
+                </div>
+                <div class="benefits">
+                  {" "}
+                  <img
+                    src={Ver}
+                    height="20"
+                    alt=""
+                  />{" "}
+                  <span>Incêndios, queda de raios e explosão</span>{" "}
+                </div>
+                <div class="benefits">
+                  {" "}
+                  <img
+                    src={Ver}
+                    height="20"
+                    alt=""
+                  />{" "}
+                  <span>Desastres Naturais</span>{" "}
+                </div>
+                <div class="benefits">
+                  {" "}
+                  <img
+                    src={Ver}
+                    height="20"
+                    alt=""
+                  />{" "}
+                  <span>Furto, extorsão e roubo de bens</span>{" "}
+                </div>
+                <div class="benefits">
+                  {" "}
+                  <img
+                    src={Ver}
+                    height="20"
+                    alt=""
+                  />{" "}
+                  <span>Impacto de veículos e quedas de Aeronave</span>{" "}
+                </div>
+                <div class="benefits">
+                  {" "}
+                  <img
+                    src={Ver}
+                    height="20"
+                    alt=""
+                  />{" "}
+                  <span>Quebra de vidros e espelhos</span>{" "}
+                </div>
+                <div class="benefits">
+                  {" "}
+                  <img
+                    src={Ver}
+                    height="20"
+                    alt=""
+                  />{" "}
+                  <span>reparos domésticos</span>{" "}
+                </div>
+                <div class="benefits">
+                  {" "}
+                  <img
+                    src={Ver}
+                    height="20"
+                    alt=""
+                  />{" "}
+                  <span>Serviços para computadores</span>{" "}
+                </div>
+                <div class="benefits">
+                  {" "}
+                  <img
+                    src={Ver}
+                    height="20"
+                    alt=""
+                  />{" "}
+                  <span>Tumulto, greve e lock-out</span>{" "}
+                </div>
+                <div class="benefits">
+                  {" "}
+                  <img
+                    src={Ver}
+                    height="20"
+                    alt=""
+                  />{" "}
+                  <span>Cercas Elétricas</span>{" "}
+                </div>
+                <div class="benefits">
+                  {" "}
+                  <img
+                    src={Ver}
+                    height="20"
+                    alt=""
+                  />{" "}
+                  <span>Danos Elétricos</span>{" "}
+                </div>
+                <div class="benefits">
+                  {" "}
+                  <img
+                    src={Ver}
                     height="20"
                     alt=""
                   />{" "}
                   <span>Vendaval, furacão, ciclone, tornado e granizo</span>{" "}
                 </div>
-                <div class="benefits">
-                  {" "}
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Ouro.svg"
-                    height="20"
-                    alt=""
-                  />{" "}
-                  <span>Vendaval, furacão, ciclone, tornado e granizo</span>{" "}
-                </div>
-                <div class="benefits">
-                  {" "}
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Ouro.svg"
-                    height="20"
-                    alt=""
-                  />{" "}
-                  <span>Vendaval, furacão, ciclone, tornado e granizo</span>{" "}
-                </div>
-                <div class="benefits">
-                  {" "}
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Ouro.svg"
-                    height="20"
-                    alt=""
-                  />{" "}
-                  <span>Vendaval, furacão, ciclone, tornado e granizo</span>{" "}
-                </div>
-                <div class="benefits">
-                  {" "}
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Ouro.svg"
-                    height="20"
-                    alt=""
-                  />{" "}
-                  <span>Vendaval, furacão, ciclone, tornado e granizo</span>{" "}
-                </div>
-                <div class="benefits">
-                  {" "}
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Ouro.svg"
-                    height="20"
-                    alt=""
-                  />{" "}
-                  <span>Vendaval, furacão, ciclone, tornado e granizo</span>{" "}
-                </div>
-                <div class="benefits">
-                  {" "}
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Ouro.svg"
-                    height="20"
-                    alt=""
-                  />{" "}
-                  <span>Vendaval, furacão, ciclone, tornado e granizo</span>{" "}
-                </div>
-                <div class="benefits">
-                  {" "}
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Ouro.svg"
-                    height="20"
-                    alt=""
-                  />{" "}
-                  <span>Vendaval, furacão, ciclone, tornado e granizo</span>{" "}
-                </div>
-                <div class="benefits">
-                  {" "}
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Ouro.svg"
-                    height="20"
-                    alt=""
-                  />{" "}
-                  <span>Vendaval, furacão, ciclone, tornado e granizo</span>{" "}
-                </div>
-                <div class="benefits">
-                  {" "}
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Ouro.svg"
-                    height="20"
-                    alt=""
-                  />{" "}
-                  <span>Vendaval, furacão, ciclone, tornado e granizo</span>{" "}
-                </div>
-                <div class="benefits">
-                  {" "}
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Ouro.svg"
-                    height="20"
-                    alt=""
-                  />{" "}
-                  <span>Vendaval, furacão, ciclone, tornado e granizo</span>{" "}
-                </div>
-                <div class="benefits">
-                  {" "}
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Ouro.svg"
-                    height="20"
-                    alt=""
-                  />{" "}
-                  <span>Vendaval, furacão, ciclone, tornado e granizo</span>{" "}
-                </div>
-                <div class="benefits">
-                  {" "}
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Star_Ouro.svg"
-                    height="20"
-                    alt=""
-                  />{" "}
-                  <span>Vendaval, furacão, ciclone, tornado e granizo</span>{" "}
-                </div>
+
               </div>
             </div>
           </div>
@@ -159,14 +186,14 @@ export default function Client() {
         <div class="base-client">
           <form>
             <div class="base-1">
-              <h2>Dados do Cliente</h2>
+              <h2 className="h2b">Dados do Cliente</h2>
 
               <div class="base-box">
                 <div class="ipt">
-                  <label>Nome:</label> <input type="text" />
+                  <label>Nome Completo:</label> <input type="text" />
                 </div>
                 <div class="ipt">
-                  <label>Sobrenome:</label> <input type="" />
+                  <label>CPF:</label> <input type="" />
                 </div>
               </div>
 
@@ -199,7 +226,7 @@ export default function Client() {
             </div>
 
             <div class="base-2">
-              <h2>Informações dos membros da família: (Máximo 5 pessoas) </h2>
+              <h2 className="h2b">Informações dos membros da família: (Máximo 5 pessoas) </h2>
 
               <div class="base-box">
                 <div class="ipt">
@@ -244,7 +271,7 @@ export default function Client() {
             </div>
 
             <div class="base-3">
-              <h2>Informações da Propriedade</h2>
+              <h2 className="h2b">Informações da Propriedade</h2>
 
               <div class="base-box">
                 <div class="ipt">
@@ -294,7 +321,7 @@ export default function Client() {
             </div>
 
             <div class="base-4">
-              <h2>Preferências de Instalação</h2>
+              <h2 className="h2b">Preferências de Instalação</h2>
 
               <div class="base-box">
                 <div class="ipt">
@@ -307,7 +334,7 @@ export default function Client() {
             </div>
 
             <div class="base-4">
-              <h2>Preferências de Notificações:</h2>
+              <h2 className="h2b">Preferências de Notificações:</h2>
 
               <div class="box-check">
                 <label>Telefone</label>
@@ -320,38 +347,38 @@ export default function Client() {
                 <input type="checkbox" />
               </div>
 
-              <h4>Contatos Autorizados (Maxímo 3 pessoas)</h4>
+              <h4 className="h4b">Contatos Autorizados (Maxímo 3 pessoas)</h4>
               <div class="base-4pt2">
                 <div class="base-box">
-                  <div class="ipt1">
+                  <div class="ipt31">
                     <label>Nome:</label> <input type="text" />
                   </div>
-                  <div class="ipt1">
+                  <div class="ipt31">
                     <label>telefone:</label> <input type="" />
                   </div>
-                  <div class="ipt1">
+                  <div class="ipt31">
                     <label>Email:</label> <input type="" />
                   </div>
                 </div>
                 <div class="base-box">
-                  <div class="ipt1">
+                  <div class="ipt31">
                     <label>Nome:</label> <input type="text" />
                   </div>
-                  <div class="ipt1">
+                  <div class="ipt31">
                     <label>telefone:</label> <input type="" />
                   </div>
-                  <div class="ipt1">
+                  <div class="ipt31">
                     <label>Email:</label> <input type="" />
                   </div>
                 </div>
                 <div class="base-box">
-                  <div class="ipt1">
+                  <div class="ipt31">
                     <label>Nome:</label> <input type="text" />
                   </div>
-                  <div class="ipt1">
+                  <div class="ipt31">
                     <label>telefone:</label> <input type="" />
                   </div>
-                  <div class="ipt1">
+                  <div class="ipt31">
                     <label>Email:</label> <input type="" />
                   </div>
                 </div>
@@ -359,7 +386,7 @@ export default function Client() {
             </div>
 
             <div class="base-5">
-              <h2>Informações Adicionais:</h2>
+              <h2 className="h2b">Informações Adicionais:</h2>
               <textarea placeholder="Outras informações específicas que podem ser relevantes para a configuração do sistema de segurança, como a presença de animais de estimação.">
                 {" "}
               </textarea>
@@ -377,10 +404,31 @@ export default function Client() {
               </div>
             </div>
           </form>
-          <button id="cad">Cadastrar</button>
+         <button id="" variant="primary" onClick={handleShow}>Cadastrar</button>
         </div>
         <button class="btn btn-primary" id="btn2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Visualizar Plano Selecionado</button>
       </main>
+      <Footer />
+
+      <div className="ContainerModal">
+      <Modal show={show} onHide={handleClose} id="modals">
+        <Modal.Header closeButton>
+          <Modal.Title>Termo de Contrato!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+
+        <embed src="https://docs.google.com/document/d/1rkrtSpLpGMc9oFfxNC8Ynw2HXqBwdWGK/edit?usp=sharing&ouid=111065481512841555327&rtpof=true&sd=true" width="1150" height="575"/> 
+        </Modal.Body>
+        <Modal.Footer>
+          <Link  to={"/Pagamento"}>
+            {" "}
+            <Button id="con" variant="primary" onClick={handleClose}>
+              Concordo{" "}
+            </Button>{" "}
+          </Link>
+        </Modal.Footer>
+      </Modal>
+    </div>
     </div>
   );
 }

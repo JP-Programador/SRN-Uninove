@@ -1,5 +1,7 @@
 import Logo from "../../assets/logo.png";
 import "./index.css";
+import { Link } from "react-router-dom"
+
 export default function Header() {
   return (
     <div className="containerHeader">
@@ -22,28 +24,28 @@ export default function Header() {
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/#">
+                <Link to="/" class="nav-link active" aria-current="page">
                   Home
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/#">
+                <Link class="nav-link" to="/Sobre Nós">
                 Sobre Nós
-                </a>
+                </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/#">
+                <Link class="nav-link" to="/Planos">
                 Planos
-                </a>
+                </Link>
               </li>
               <li class="nav-item dropdown">
-              <a class="nav-link" href="/#"> Entre em Contato
-                </a>
+              <Link class="nav-link" to="/Contato"> Entre em Contato
+                </Link>
 
               </li>
               <li class="nav-item dropdown">
-              <a class="nav-link" href="/#"> Portal do Cliente
-                </a>
+              <Link class="nav-link" to="/Login"> Portal do Cliente
+                </Link>
 
               </li>
             </ul>

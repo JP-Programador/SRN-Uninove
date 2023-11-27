@@ -1,5 +1,6 @@
-import React from 'react';
 import './index.css'
+import Footer from "../../components/footer";
+import Header from "../../components/header";
 
 import furto from '../../assets/furto.jpg'
 import cameras from '../../assets/cameras.jpg'
@@ -14,12 +15,13 @@ import calculadora from '../../assets/calculator.svg'
 
 export default function Home (){
     return (
-            <div className="container">
-        <div class="container-home">
-        <h1>PROTEGENDO</h1>
-        <h2>O QUE MAIS IMPORTA</h2>
-        <span> A SRN ADVANCED está no mercado com estrutura e profissionais capacitados para  dar tranquilidade à sua vida. Ligue agora e agende uma visita!</span>
-        <button> <a href="../Contact us/index.html">   Entre em Contato</a></button> 
+        <div className="containerH">
+            <Header />
+            <div class="container-home">
+            <h2 id='cli2'>PROTEGENDO</h2>
+            <h1 id='cli1'>O QUE MAIS IMPORTA</h1>
+            <span className='srb'> A SRN ADVANCED está no mercado com estrutura e profissionais capacitados para  dar tranquilidade à sua vida. <br></br> Ligue agora e agende uma visita!</span>
+            <button> <a href="../Contact us/index.html">   Entre em Contato</a></button> 
         </div>
 
         <div class="one-range">
@@ -55,7 +57,7 @@ export default function Home (){
             <div class="secund-box">
                 <div class="secund-header">
                     <img src={monitoramento} alt="logo da camera" />
-                    <h3>Monitoramento 24 horas</h3>
+                    <h3 className='hh3'> Monitoramento 24 horas</h3>
                 </div>
                 <div class="description">O monitoramento 24 horas reafirma nosso foco de garantir a proteção do seu patrimônio à todo momento.</div>
             </div>
@@ -63,7 +65,7 @@ export default function Home (){
             <div class="secund-box">
                 <div class="secund-header">
                     <img src={pesssoas} alt="imagem de pessoas" />
-                    <h3>profissionais Experientes</h3>
+                    <h3 className='hh3'>profissionais Experientes</h3>
                 </div>
                 <div class="description">Mão de obra especializada no mercado de segurança na capital de SP, tornando a SRN umas das referência segura.</div>
             </div>
@@ -71,11 +73,12 @@ export default function Home (){
             <div class="secund-box">
                 <div class="secund-header">
                     <img src={calculadora} alt="logo da calculadora" />
-                    <h3>Valor Justos & acesíveis </h3>
+                    <h3 className='hh3'>Valor Justos & acesíveis </h3>
                 </div>
                 <div class="description">Nosso foco é proporcionar a sua segurança por um valor acessível e justo. Garantindo os melhores valores. </div>
             </div>
         </div>        
+        <Footer />
         </div>
     )
 }

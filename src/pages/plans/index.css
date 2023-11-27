@@ -59,9 +59,10 @@
   span {
     font-size: 15px;
     font-weight: bold;
+    color: black;
   }
 
-  button {
+  .cot {
     padding: 12px 40px;
     width: 17em;
     align-items: center;
@@ -73,7 +74,7 @@
     cursor: pointer;
   }
 
-  button:hover {
+  .cot:hover {
     color: aliceblue;
     background-color: rgb(23, 119, 23);
 

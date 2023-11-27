@@ -16,7 +16,7 @@ export default function Plans () {
             <Header />
          <div class="container-plans">
         <div class="boxs-plans">
-            <img src={Bron}/>
+            <img src={Bron} alt=''/>
             <div class="fil-box">
                 <h1>Plano Bronze</h1>
                 <div class="boxs-texts">
@@ -31,7 +31,7 @@ export default function Plans () {
         </div>
 
         <div class="boxs-plans2">
-            <img src={Our}/>
+            <img src={Our} alt=''/>
             <div class="fil-box">
                 <h1>Plano Ouro</h1>
                 <div class="boxs-texts">
@@ -47,7 +47,7 @@ export default function Plans () {
         </div>
 
         <div class="boxs-plans">
-            <img src={Prat}/>
+            <img src={Prat} alt=''/>
             <div class="fil-box">
                 <h1>Plano Prata</h1>
                 <div class="boxs-texts">

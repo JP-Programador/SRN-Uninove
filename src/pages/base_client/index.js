@@ -6,7 +6,7 @@ import Ver from "../../assets/verificado.png"
 
 import { Link } from "react-router-dom"
 import Button from "react-bootstrap/Button";
-import { useState, version } from "react";
+import { useState } from "react";
 
 import Modal from "react-bootstrap/Modal";
 export default function Client() {

@@ -29,7 +29,7 @@ export default function About() {
             preocupar. Tendo como sede em São Paulo, a SRN tem operações e
             atende todos os municípios da cidade.
           </div>
-          <img src={Fundo} />
+          <img src={Fundo} alt=""/>
         </div>
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">

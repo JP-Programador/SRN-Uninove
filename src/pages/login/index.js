@@ -9,13 +9,6 @@ export default function Login () {
     const[ email, setEmail] = useState ('');
     const[ senha, setSenha] = useState ('');
 
-    const logar = async () => {
-        let r = email;
-      if(r === "joaopedrosilvadossantos2003@gmail.com") {
-        return alert("sss");
-    } 
-
-    }
 
     return (
         <div className="containerlog">

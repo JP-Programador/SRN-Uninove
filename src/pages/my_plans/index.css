@@ -1,0 +1,103 @@
+.containerMy{
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+.titles-plans{
+  margin: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  text-align: justify;
+} 
+.my {
+  font-size: 64px;
+}
+#my{
+  margin: 105px 20px 00px 0px;
+  font-size: 32px;
+  color: rgb(214, 19, 19);
+}
+.logo-plans{
+  text-align: center;
+}
+.card-body {
+  text-align: center;
+}
+
+button {
+  background-color: greenyellow;
+  width: 80%;
+  height: 2.5em;
+
+  margin: 1em 0em;
+
+  border: none;
+  border-radius: 2em;
+
+  cursor: pointer;
+
+} button:hover {
+transition: .2s;
+background-color: red;
+color: white;
+} 
+.row {
+  --bs-gutter-x: -0rem;
+  margin-left: 1em;
+}
+
+.h-100 {
+  border: 1px black solid;
+  width: 97%;
+
+> img {
+  height: 25em;
+}
+}
+
+
+.cancel {
+  background-color: red;
+color: cornsilk;
+  position: fixed;
+  right: 2em;
+  bottom: 1em;
+  width: 12%;
+  cursor: pointer;
+
+    
+}  .cancel:hover {
+  transition: .2s;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  } 
+
+  @media only screen and (max-width: 600px) {
+    .titles-plans{
+    display: flex;
+    flex-direction: column;
+    }
+    h1 {
+      text-align: center;
+      font-size: 45px;
+    }
+    h4 {
+      text-align: justify;
+      font-size: 18px;
+    }
+    .logo-plans img {
+      width: 300px;
+      text-align: start;
+      align-items: start;
+    }
+    .cancel {
+      background-color: red;
+      color: cornsilk;
+      position: inherit;
+      width: 100%;
+      cursor: pointer;
+    
+        
+    } 
+
+  }

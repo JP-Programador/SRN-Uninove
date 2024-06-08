@@ -1,0 +1,338 @@
+
+.container11 {
+    background-color: white;
+}
+
+
+.container21 {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 22px;
+    background-color: white;
+    color: black !important;
+}
+
+.part2 {
+    margin-top: 7em;
+}
+
+.dados {
+    margin-top: 3em;
+}
+
+.input1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.ipt {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ipt1 {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+}
+#check {
+    color: red;
+    height: 20px;
+}
+.dados input {
+    width: 19em;
+    height: 2em;
+}
+
+.tip {
+    text-align: justify;
+    margin-left: 3em;
+}
+
+.input1 :nth-child(1) {
+    margin-right: 1em;
+}
+
+.container21 > input {
+    width: 20em;
+
+}
+
+.h4p {
+    padding: 10px;
+    font-size: 28px;
+    text-align: center;
+    color: rgb(153, 51, 51);
+}
+
+.plan-obs {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+
+    >span {
+        margin: 25px 45px 0px 10px;
+        color: rgb(74, 8, 159);
+        font-weight: 600;
+    }
+
+}
+
+h6 {
+    color: #0368FF;
+    margin-top: 1.8em;
+    text-align: center;
+}
+
+.plan-select {
+    border: inset .1px black;
+    width: 32.5em;
+
+    .ipt1>input {
+        width: 2.5em !important;
+    }
+
+}
+
+.groupBut {
+    margin-left: 2em;
+}
+
+.period {
+    padding: 25px 0px;
+    background-color: red;
+    color: white;
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+#fin1 {
+    border: none;
+    border-radius: 10px;
+    background-color: #4E55FF;
+    width: 18.5em;
+    padding: .5em 0em;
+
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+
+    margin-top: 40px;
+}
+
+
+
+.box-card,
+.box-pix,
+.box-bolet {
+    display: none;  
+    margin-left: 6em;
+    .ipt {
+        margin-right: 4em;
+        padding: 10px 0px;
+    }
+}
+
+.box-card input {
+    width: 18em;
+    height: 2em;
+}
+
+button:hover {
+    background-color: rgb(60, 110, 180) !important;
+
+}
+.venb {
+    text-align: start;
+}
+#show,
+#show1 {
+    font-size: 15px;
+    padding: 15px 30px;
+    width: 20em;
+    margin-left: 4em;
+    border: solid .1px;
+    background-color: white;
+    border-radius: 10px;
+    height: 5em !important;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    > img {
+        margin-bottom: 20px;
+    }
+}
+.h5pix {
+    text-align: start;
+}
+
+#show1 {
+    margin: 0px 2.4em;
+}
+
+#show2 {
+    padding: 1px 30px;
+
+    border: solid .1px;
+    border-radius: 10px;
+
+    background-color: white;
+}
+
+#carM,
+#carD,
+#carC {
+    width: 11em;
+    margin-right: -.5em;
+
+}
+
+label {
+    padding: 4px 0px;
+}
+
+#bandeira {
+    text-align: center;
+    font-weight: 500;
+}
+
+/*PARTE PIX */
+.pix1 {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 125px 0px 0px;
+}
+
+.box-pix textarea {
+    border: none;
+    width: 42em;
+    height: 7em;
+
+
+}
+
+textarea:active {
+    border: none;
+
+}
+#copiar {
+    border: 0px;
+    border-radius: 20px;
+    background-color: #2bc63a;
+    color: white;
+    font-weight: 500;
+    padding: .7em 6em;
+    margin-bottom: 1em;
+    width: 25em;
+}
+
+.qr-text {
+
+    padding: 20px 0px;
+
+
+    >h5 {
+        color: red;
+        font-size: 19px;
+    }
+
+
+    >span {
+
+        margin-top: 5px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+.parcel {
+    display: flex;
+    flex-direction: column;
+}
+
+#cart {
+    width: 175% ;
+
+}
+
+select {
+    width: 85%;
+    text-align: center;
+
+    font-size: 18px;
+}
+.btn-primary, .btn-secondary {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+    .input1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input1 :nth-child(1) {
+        margin: 0px;
+    }
+
+    .ipt {
+        margin: 0px 0px !important;
+    }
+
+    select {
+        width: 70%;
+        align-self: center;
+    }
+
+        /*CARD PLANO */     
+    .container, .plan-obs {
+        display: flex;
+        flex-direction: column;
+        padding: 3em 0px;
+        text-align: center;
+
+        >span {
+            margin: 0px;
+        }
+    }
+
+    .plan-obs {
+        padding: 1em;
+    }
+
+    .plan-select {
+        width: 24em;
+        margin-left: 1em;
+
+        font-size: 15px !important;
+
+
+    }
+
+
+
+    .pix1 {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    textarea {
+        width: 22em !important;
+    }
+
+    #show {
+        margin: 35px 0px;
+    }
+
+}

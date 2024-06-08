@@ -1,0 +1,45 @@
+#fin1 {
+    border: none;
+    border-radius: 10px;
+    background-color: #4E55FF;
+    width: 18.5em;
+    padding: .5em 0em;
+
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: bold;
+
+    margin-top: 40px;
+}
+
+
+.modal-title {
+    color: #22ba14;
+}
+
+.modal-body  {
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+
+}
+
+#a1 {
+    color: red;
+}
+.mod {
+    width: 100% !important;
+}
+
+.modal-header .btn-close {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    #fin1 {
+    width: 90%;
+    }
+}@media only screen and (min-width: 800px) {
+    .modal-content {
+        width: 40em;
+    }
+}
